@@ -1,0 +1,13 @@
+Malloc Lab Release Notes
+9/2/2014
+Fixed bug in grade-malloclab.pl autograder that relied on bash syntax that is incompatible with sh. Thanks to Prof. Hugh Lauer, Worcester Polytechnic Institute
+11/30/2010
+Fixed a 1-line bug in the mm-implicit.c and mm-explicit.c example programs that improperly tested the error code returned by mem_sbrk. Some of the newer versions of libc malloc allocate in higher memory addresses that tickle the bug (Another one of those bugs that we're always warning the students about...sigh). Thanks to Prof. Paul Haiduk, West Texas A&M University.
+The mm-implicit.c and mm-explicit.c example programs are not 64-bit clean. Added the -m32 flag to Makefile and Makefile-handout to reflect this.
+4/28/2004
+Fixed an off-by-one memory overwrite in the processing for the -f argument (the kind we're always warning the students about...sigh). Thanks to Prof. John Regehr, University of Utah.
+In config.h, #ifndef __CONFIG_ was incorrectly spelled #ifndef __CONGIF_.
+7/14/2003
+Minor change to fix the rule that builds the Latex writeup pages.
+6/3/2002
+Initial release.
